@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-boot-essentials-jpa
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gym?createDatabaseIfNotExist=true
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
